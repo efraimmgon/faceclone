@@ -10,6 +10,7 @@
                  [conman "0.6.8"]
                  [cprop "0.1.11"]
                  [funcool/struct "1.0.0"]
+                 [garden "1.3.2"]
                  [luminus-immutant "0.2.3"]
                  [luminus-migrations "0.4.0"]
                  [luminus-nrepl "0.1.4"]
@@ -57,7 +58,7 @@
    :nrepl-port 7002
    :css-dirs ["resources/public/css"]
    :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
-  
+
 
   :profiles
   {:uberjar {:omit-source true
@@ -73,8 +74,8 @@
                  :closure-warnings
                  {:externs-validation :off :non-standard-jsdoc :off}
                  :externs ["react/externs/react.js"]}}}}
-             
-             
+
+
              :aot :all
              :uberjar-name "faceclone.jar"
              :source-paths ["env/prod/clj"]
@@ -108,9 +109,9 @@
                       :source-map true
                       :optimizations :none
                       :pretty-print true}}}}
-                  
-                  
-                  
+
+
+
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj"]
                   :resource-paths ["env/dev/resources"]
@@ -126,8 +127,8 @@
                      {:output-to "target/test.js"
                       :main "faceclone.doo-runner"
                       :optimizations :whitespace
-                      :pretty-print true}}}}
-                  
-                  }
+                      :pretty-print true}}}}}
+
+
    :profiles/dev {}
    :profiles/test {}})
